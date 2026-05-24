@@ -1,2 +1,9 @@
 .env
+<<<<<<< HEAD
 .env
+=======
+.env.local
+.DS_Store
+.env
+.env.local
+>>>>>>> 56e91a3 (Third commit)

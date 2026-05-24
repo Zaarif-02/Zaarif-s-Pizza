@@ -6,6 +6,7 @@ import BlogList from './pages/BlogList'
 import SinglePost from './pages/SinglePost'
 import CptList from './pages/CptList'
 import CptDetail from './pages/CptDetail'
+import About from './pages/About'
 import WpPage from './pages/WpPage'
 
 function App() {
@@ -19,6 +20,9 @@ function App() {
           <Route path="/post/:id" element={<SinglePost />} />
           <Route path="/cpt" element={<CptList />} />
           <Route path="/cpt/:id" element={<CptDetail />} />
+          <Route path="/menu" element={<WpPage slug="sample-page" />} />
+          <Route path="/contact" element={<WpPage slug="privacy-policy" />} />
+          <Route path="/about" element={<About />} />
           <Route path="/page/:slug" element={<WpPage />} />
         </Routes>
       </main>

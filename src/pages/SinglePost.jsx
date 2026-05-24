@@ -36,6 +36,15 @@ function SinglePost() {
 
   const featuredImage = post._embedded?.['wp:featuredmedia']?.[0]?.source_url
 
+  // Clean and highlight content keywords (pizza, pizzas, dessert, desserts)
+  const highlightWords = (html) => {
+    if (!html) return ''
+    const cleaned = String(html).replace(/&hellip;|&#8230;|…/g, '')
+    return cleaned.replace(/\b(pizza|pizzas|dessert|desserts)\b/gi, m => `<strong>${m}</strong>`)
+  }
+
+  const contentHtml = highlightWords(post.content.rendered)
+
   return (
     <article className="single-post">
       <Link to="/blog" className="back-link">← Back to blog</Link>
@@ -53,7 +62,7 @@ function SinglePost() {
       {/* WordPress returns HTML content — dangerouslySetInnerHTML renders it correctly */}
       <div
         className="post-content"
-        dangerouslySetInnerHTML={{ __html: post.content.rendered }}
+        dangerouslySetInnerHTML={{ __html: contentHtml }}
       />
     </article>
   )
