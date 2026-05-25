@@ -1,5 +1,4 @@
-// ApiError — distinguishes between "WordPress not reachable" and other API errors.
-// Use this instead of a raw <p className="error"> whenever a fetch fails.
+
 
 
 const API_URL = import.meta.env.VITE_WP_API_URL
@@ -8,11 +7,6 @@ const CPT_SLUG = import.meta.env.VITE_CPT_SLUG
 const PLACEHOLDER_URL = 'http://cafe.local'
 const PLACEHOLDER_CPT = 'your-cpt-slug'
 
-// ...existing code...
-
-// ...existing code...
-           
-// ...existing code...
 function ApiError({ error, context = 'content' }) {
   const isUnconfiguredUrl = !API_URL || API_URL === PLACEHOLDER_URL
   const isUnconfiguredCpt = !CPT_SLUG || CPT_SLUG === PLACEHOLDER_CPT
