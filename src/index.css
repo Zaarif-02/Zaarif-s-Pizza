@@ -1,7 +1,4 @@
-/* =============================================
-   CSS Custom Properties — update these to match
-   your site's visual identity
-   ============================================= */
+
 :root {
   --colour-primary: #2c3e50;
   --colour-accent: #d35400;
@@ -23,9 +20,7 @@
   --spacing-xl: 4rem;
 }
 
-/* =============================================
-   Reset & Base
-   ============================================= */
+
   :root {
     --colour-primary: #cfd8dc;
     --colour-accent: #9aa0a6;
@@ -256,9 +251,7 @@ strong {
   transform: translateY(-1px);
 }
 
-/* =============================================
-   Hero + Home Blocks
-   ============================================= */
+
 .hero {
   background: linear-gradient(160deg, rgba(243, 138, 103, 0.14), rgba(244, 247, 249, 0.95));
   padding: 3rem 0 2rem;
@@ -344,9 +337,7 @@ strong {
   margin-bottom: 0.75rem;
 }
 
-/* =============================================
-   Footer
-   ============================================= */
+
 .site-footer {
   background: white;
   border-top: 1px solid var(--colour-border);
@@ -356,11 +347,7 @@ strong {
   font-size: 0.95rem;
 }
 
-/* =============================================
-   Loading & Error States
-  /* =============================================
-     CSS Custom Properties — dark theme
-     ============================================= */
+
   :root {
     --colour-primary: #cfd8dc; /* headings */
     --colour-accent: #9aa0a6;
@@ -382,9 +369,6 @@ strong {
     --spacing-xl: 4rem;
   }
 
-  /* =============================================
-     Reset & Base
-     ============================================= */
   *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -427,9 +411,7 @@ strong {
     font: inherit;
   }
 
-  /* =============================================
-     Layout
-     ============================================= */
+
   .app {
     display: flex;
     flex-direction: column;
@@ -472,9 +454,6 @@ strong {
     color: var(--colour-text);
   }
 
-  /* =============================================
-     Header & Navigation
-     ============================================= */
   .site-header {
     background: linear-gradient(135deg, #2c3e50 0%, #1f2f40 100%);
     color: white;
@@ -541,9 +520,7 @@ strong {
     transform: translateY(-1px);
   }
 
-  /* =============================================
-     Hero + Home Blocks
-     ============================================= */
+
   .hero {
     background: linear-gradient(160deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
     padding: 3rem 0 2rem;
@@ -629,9 +606,7 @@ strong {
     margin-bottom: 0.75rem;
   }
 
-  /* =============================================
-     Footer
-     ============================================= */
+
   .site-footer {
     background: var(--colour-surface);
     border-top: 1px solid var(--colour-border);
@@ -641,10 +616,6 @@ strong {
     font-size: 0.95rem;
   }
 
-  /* =============================================
-     Loading & Error States
-     ============================================= */
-  .loading,
   .error {
     text-align: center;
     padding: var(--spacing-lg);
@@ -696,9 +667,7 @@ strong {
     font-size: 0.85em;
   }
 
-  /* =============================================
-     Post Grid & Cards
-     ============================================= */
+
   .posts-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -746,9 +715,7 @@ strong {
     color: var(--colour-accent);
   }
 
-  /* =============================================
-     Single Post
-     ============================================= */
+ 
   .single-post {
     max-width: 760px;
     margin: 0 auto;
@@ -848,9 +815,7 @@ strong {
     color: var(--colour-text-light);
   }
 
-  /* =============================================
-     Responsive Breakpoints
-     ============================================= */
+
   @media (max-width: 900px) {
     .feature-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -969,9 +934,7 @@ strong {
     font-size: 0.9rem;
   }
 
-  /* =============================================
-     Responsive
-     ============================================= */
+
   @media (max-width: 600px) {
     .site-header .container {
       flex-direction: column;
@@ -1092,9 +1055,7 @@ strong {
   font-size: 0.9rem;
 }
 
-/* =============================================
-   Responsive
-   ============================================= */
+
 @media (max-width: 600px) {
   .site-header .container {
     flex-direction: column;
